@@ -1,4 +1,3 @@
-import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:greengrocer/modules/sign-in/components/custom_text_field.dart';
 
@@ -14,9 +13,9 @@ class SignInScreen extends StatelessWidget {
           Expanded(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
-              children: [
+              children: const [
                 // Nome do app
-                const Text.rich(
+                Text.rich(
                   TextSpan(
                     style: TextStyle(
                       fontSize: 40,
@@ -39,49 +38,13 @@ class SignInScreen extends StatelessWidget {
                   ),
                 ),
                 // Categorias
-                AnimatedTextKit(
-                  animatedTexts: [
-                    FadeAnimatedText(
-                      'Frutas',
-                      textStyle: const TextStyle(
-                        fontSize: 24.0,
-                      ),
-                    ),
-                    FadeAnimatedText(
-                      'Verduras',
-                      textStyle: const TextStyle(
-                        fontSize: 24.0,
-                      ),
-                    ),
-                    FadeAnimatedText(
-                      'Legumes',
-                      textStyle: const TextStyle(
-                        fontSize: 24.0,
-                      ),
-                    ),
-                    FadeAnimatedText(
-                      'Carnes',
-                      textStyle: const TextStyle(
-                        fontSize: 24.0,
-                      ),
-                    ),
-                    FadeAnimatedText(
-                      'Cereais',
-                      textStyle: const TextStyle(
-                        fontSize: 24.0,
-                      ),
-                    ),
-                    FadeAnimatedText(
-                      'Laticíneos',
-                      textStyle: const TextStyle(
-                        fontSize: 24.0,
-                      ),
-                    ),
-                  ],
-
-                  //   isRepeatingAnimation: true,
-                  //   totalRepeatCount: 10,
-                ),
+                Text(
+                  "Frutos",
+                  style: TextStyle(
+                    fontSize: 24,
+                    color: Colors.white,
+                  ),
+                )
               ],
             ),
           ),
