@@ -95,7 +95,9 @@ class SignInPage extends StatelessWidget {
                             borderRadius: BorderRadius.circular(18),
                           ),
                         ),
-                        onPressed: () {},
+                        onPressed: () {
+                          Modular.to.navigate('/base/');
+                        },
                         child: const Text(
                           'Entrar',
                           style: TextStyle(
