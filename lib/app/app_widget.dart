@@ -6,7 +6,10 @@ class AppWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp.router(
       title: 'Meu App Modular',
-      theme: ThemeData(primarySwatch: Colors.green),
+      theme: ThemeData(
+        primarySwatch: Colors.green,
+        scaffoldBackgroundColor: Colors.white.withAlpha(190),
+      ),
       debugShowCheckedModeBanner: false,
       routeInformationParser: Modular.routeInformationParser,
       routerDelegate: Modular.routerDelegate,
