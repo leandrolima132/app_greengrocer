@@ -3,6 +3,7 @@ import 'package:flutter_modular/flutter_modular.dart';
 import 'package:greengrocer/app/modules/base/base_controller.dart';
 import 'package:greengrocer/app/modules/tabs/cart/cart_tab.dart';
 import 'package:greengrocer/app/modules/tabs/home/home_tab.dart';
+import 'package:greengrocer/app/modules/tabs/profile/profile_tab.dart';
 
 class BasePage extends StatefulWidget {
   const BasePage({Key? key}) : super(key: key);
@@ -23,8 +24,8 @@ class _BasePageState extends State<BasePage> {
         children: [
           const HomeTab(),
           const CartTab(),
-          Container(color: Colors.blue),
           Container(color: Colors.purple),
+          const ProfileTab(),
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
