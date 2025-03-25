@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:greengrocer/app/modules/base/base_controller.dart';
+import 'package:greengrocer/app/modules/tabs/cart/cart_tab.dart';
 import 'package:greengrocer/app/modules/tabs/home/home_tab.dart';
 
 class BasePage extends StatefulWidget {
@@ -21,7 +22,7 @@ class _BasePageState extends State<BasePage> {
         controller: controller.pageController,
         children: [
           const HomeTab(),
-          Container(color: Colors.yellow),
+          const CartTab(),
           Container(color: Colors.blue),
           Container(color: Colors.purple),
         ],
